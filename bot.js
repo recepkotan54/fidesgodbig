@@ -90,7 +90,7 @@ client.unload = command => {
    }
 });
 
-client.on.toLowerCase('message', msg => {
+client.on('message', msg => {
   if (msg.content === './tts') {
    msg.delete(30)
     msg.reply('**Yazı Engellendi**');
@@ -117,7 +117,7 @@ client.on('message', msg => {
   }
 });
 
-client.on.toLowerCase('message', msg => {
+client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
     msg.reply('**Aleyküm Selam, Hoşgeldin!**');
   }
@@ -171,7 +171,7 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
-  if (msg.content === 'sg') {
+  if (msg.content.toLowerCase === 'sg') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
