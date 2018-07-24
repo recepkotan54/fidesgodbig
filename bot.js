@@ -78,6 +78,18 @@ client.unload = command => {
   });
 };
 
+ client.on("message", msg => {
+  if (msg.content.toLowerCase().match(/(http|.com|discord.gg|discordapp.com)/g) && !msg.author.bot && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
+   msg.delete(30).then(deletedMsg => {
+       deletedMsg.reply("Kardesim Reklam Yapma.:warning: ").catch(e => {
+        console.error(e);
+       });
+     }).catch(e => {
+      console.error(e);
+     });
+   }
+});
+
 client.on('message', msg => {
   if (msg.content === './tts') {
    msg.delete(30)
