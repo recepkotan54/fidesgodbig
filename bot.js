@@ -90,36 +90,7 @@ client.unload = command => {
    }
 });
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'Oc') {
-    msg.reply('**Küfür Engellendi**');
-  if (msg.author.bot) return;
-  if (msg.content.toLowerCase().includes('oc')) msg.reply('**Küfür Engellendi**');
-  if (msg.content.toLowerCase().includes('oruspu')) msg.reply('**Küfür Engellendi**');
-  if (msg.content.toLowerCase().includes('pic')) msg.reply('**Küfür Engellendi**');
-  if (msg.content.toLowerCase().includes('mk')) msg.reply('**Küfür Engellendi**');
-  if (msg.content.toLowerCase().includes('anan')) msg.reply('**Küfür Engellendi**');
-  if (msg.content.toLowerCase().includes('yarram')) msg.reply('**Küfür Engellendi**');
-  if (msg.content.toLowerCase().includes('yarrak')) msg.reply('**Küfür Engellendi**');
-  if (msg.content.toLowerCase().includes('amk')) msg.reply('**Küfür Engellendi**');
-  if (msg.content.toLowerCase().includes('top')) msg.reply('**Küfür Engellendi**!);
-  if (msg.content.toLowerCase().includes('piç')) msg.reply('**Küfür Engellendi**');
-  if (msg.content.toLowerCase().includes('sikik')) msg.reply('**Küfür Engellendi**');
-  if (msg.content.toLowerCase().includes('amcık ağızlı')) msg.reply('**Küfür Engellendi**');	  
-  if (msg.content.toLowerCase().includes('aq')) msg.reply('**Küfür Engellendi**');	  
-  if (msg.content.toLowerCase().includes('amk')) msg.reply('**Küfür Engellendi**');	  
-  if (msg.content.toLowerCase().includes('orospu')) msg.reply('**Küfür Engellendi**');	  
-  if (msg.content.toLowerCase().includes('oruspu')) msg.reply('**Küfür Engellendi**');	  
-  if (msg.content.toLowerCase().includes('oç')) msg.reply('**Küfür Engellendi**');	  
-  if (msg.content.toLowerCase().includes('yarrak kafalı')) msg.reply('**Küfür Engellendi**');	  
-  if (msg.content.toLowerCase().includes('amcık')) msg.reply('**Küfür Engellendi**');	  
-  if (msg.content.toLowerCase().includes('at siki')) msg.reply('**Küfür Engellendi**');	  
-  if (msg.content.toLowerCase().includes('sikik')) msg.reply('**Küfür Engellendi**');	  
-  msg.delete();
-  }
-});
-
-client.on('message', msg => {
+client.on.toLowerCase('message', msg => {
   if (msg.content === './tts') {
    msg.delete(30)
     msg.reply('**Yazı Engellendi**');
@@ -146,7 +117,7 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', msg => {
+client.on.toLowerCase('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
     msg.reply('**Aleyküm Selam, Hoşgeldin!**');
   }
