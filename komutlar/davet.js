@@ -13,7 +13,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('**İşte Davet Linkim**: https://discordapp.com/oauth2/authorize?client_id=469820178960482314&permissions=2146958583&scope=bot          **Buda Bizim Sunucunun** :)  https://discord.gg/Ee7hBtV **Yapımcılar**: Albattroz#2772 ve Recep | Fides#9190');
+    .setDescription('**İşte Davet Linkim**: Şuanlık Bot Sadece Bizim Sunucuda Bulunuyor.          **Buda Bizim Sunucunun** :)  https://discord.gg/Ee7hBtV **Yapımcılar**: Recep | Fides#9190');
     return message.author.sendEmbed(pingozel)
 };
 
