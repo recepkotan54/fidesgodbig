@@ -81,7 +81,7 @@ client.unload = command => {
  client.on("message", msg => {
   if (msg.content.toLowerCase().match(/(http|.com|discord.gg|discordapp.com)/g) && !msg.author.bot && msg.channel.type === "text" && msg.channel.permissionsFor(msg.guild.member(client.user)).has("MANAGE_MESSAGES")) {
    msg.delete(30).then(deletedMsg => {
-       deletedMsg.reply("Kardeşim Reklam Yapma.:warning: ").catch(e => {
+       deletedMsg.reply("Kendi Emeğinle Büyüt Sunucunu.:warning: ").catch(e => {
         console.error(e);
        });
      }).catch(e => {
