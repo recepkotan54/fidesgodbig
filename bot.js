@@ -98,14 +98,14 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
-  if (msg.content === '38127947') {
+  if (msg.content.toLowerCase === '38127947') {
    msg.delete(30)
     msg.reply('**Yazı Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === './tts38127947') {
+  if (msg.content.toLowerCase === './tts38127947') {
    msg.delete(30)
     msg.reply('**Yazı Engellendi**');
   }
@@ -171,21 +171,21 @@ client.on('message', msg => {
 })
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase === 'sg') {
+  if (msg.content.toLowerCase === 'pic') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === 'sikik') {
+  if (msg.content.toLowerCase === 'sikik') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === 'amına koyayım') {
+  if (msg.content.toLowerCase === 'amına koyayım') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
@@ -193,63 +193,63 @@ client.on('message', msg => {
 
 
 client.on('message', msg => {
-  if (msg.content === 'amina koyayim') {
+  if (msg.content.toLowerCase === 'amina koyayim') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === 'piç') {
+  if (msg.content.toLowerCase === 'piç') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === 'siktir git') {
+  if (msg.content.toLowerCase === 'siktir git') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === 'oc') {
+  if (msg.content.toLowerCase === 'oc') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === 'oç') {
+  if (msg.content.toLowerCase === 'oç') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === 'ananı sikeyim') {
+  if (msg.content.toLowerCase === 'ananı sikeyim') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === 'ebeni sikeyi') {
+  if (msg.content.toLowerCase === 'ebeni sikeyi') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === 'aq') {
+  if (msg.content.toLowerCase === 'aq') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
 })
 
 client.on('message', msg => {
-  if (msg.content === 'orospu çocuğu') {
+  if (msg.content.toLowerCase === 'orospu çocuğu') {
    msg.delete(30)
     msg.reply('**Küfür Engellendi**');
   }
