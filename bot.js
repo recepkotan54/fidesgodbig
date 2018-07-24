@@ -146,7 +146,7 @@ client.on('message', message => {
     let str = '<@458232153830981634>';
     let id = str.replace(/[<@!>]/g, '');
     let mesaj = args.slice(0).join(' ');
-    if (mesaj.length < 1) return message.reply(`**Bildirmemi İstediğiniz Tavsiyeyi Yazarmısınız:writing_hand:**`);
+    if (mesaj.length < 1) return message.reply(`**Bildirmemi İstediğin Tavsiyeyi Yazarmısın:writing_hand:**`);
     message.channel.sendEmbed(new Discord.RichEmbed()
     .setColor('RANDOM')
     .setDescription('**Başarılı :white_check_mark: Yapımcıma Tavsiyeni Bildirdim! Tavsiyede Bulunuduğun İçin Teşekkür Ederim!**'));
