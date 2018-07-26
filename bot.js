@@ -334,7 +334,7 @@ client.on('message', msg => {
 });
 
 client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', '💬genel-sohbet💬');
+  const channel = member.guild.channels.find('name', 'hoşgeldin');
   if (!channel) return;
   const embed = new Discord.RichEmbed()
   .setColor('RANDOM')
