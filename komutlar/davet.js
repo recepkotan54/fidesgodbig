@@ -13,7 +13,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('**__Buyrun Bizim Sunucuya__** :)  https://discord.gg/Ee7hBtV **Yapımcım**: $β ♕ Simba Owner#2913');
+    .setDescription('**__Buyrun Bizim Sunucuya__** :)  https://discord.gg/seSHUG5 **Yapımcım**: $β ♕ Simba Owner#2913');
     return message.author.sendEmbed(pingozel)
 };
 
