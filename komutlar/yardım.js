@@ -9,7 +9,7 @@ exports.run = (client, message, params) => {
   .setDescription('')
   .setColor('RANDOM')
   .addField("**Tüm Komutları Bir Araya Topladım:**", `**https://hastebin.com/upagicisap.pl**`)
-  .addField("**Yapımcım:**", " **Recep | Fides#9190** ")
+  .addField("**Yapımcım:**", " **__$β ♕ Simba Owner#2913__** ")
   if (!params[0]) {
     const commandNames = Array.from(client.commands.keys());
     const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
