@@ -7,7 +7,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Beni Bu Kişi Yaptı >>>> Recep | Fides#9190   <<<<                                                    İyi Birisidir,:point_right: Bot Yapmanıza Yardım Eder...');
+    .setDescription('Beni Bu Kişi Yaptı >>>> $β ♕ Simba Owner#2913   <<<<                                                    İyi Birisidir,:point_right: Bot Yapmanıza Yardım Eder...');
     message.channel.sendEmbed(ozelmesajkontrol) }
 };
 
