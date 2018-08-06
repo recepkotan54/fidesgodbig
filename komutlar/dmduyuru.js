@@ -2,7 +2,7 @@
 const ayarlar = require('../ayarlar.json');
 
 exports.run = (client, message, args) => {
-if (message.author.id != 458232153830981634) { return; }
+if (message.author.id != 475899747052421120) { return; }
   let mesaj = args.slice(0).join(' ');
 if (mesaj.length < 1) return message.channel.send('Birşey Yazmalısınız');
   message.delete();
